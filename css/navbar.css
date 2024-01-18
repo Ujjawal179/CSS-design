@@ -1,0 +1,31 @@
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+nav .logo{
+    width: 36px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+nav .nav-item:nth-child(1){
+    align-items: center;
+    display: flex;
+    margin-right: auto
+
+}
+
+nav .nav-item{
+    padding: 0 1rem;
+}
+
+@media (max-width:500px) {
+    nav .nav-item:not(:nth-child(1)){
+        display: none;
+    }
+}

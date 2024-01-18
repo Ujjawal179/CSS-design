@@ -1,0 +1,70 @@
+:root{
+  --back:  #1A1A1D;
+  --front: #C3073F;
+  --grey : #4E4E50;
+
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-align: y proximity;
+  color: var(--front);
+  background-color: var(--back);
+  font-family: ubuntu;
+}
+
+a{
+  all: unset;
+}
+.container{
+  border: 2px solid var(--grey);
+    box-shadow: inset 0px 0px 5px var(--grey);
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+
+@keyframes smoothAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes smoothScale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
